@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Neucha ' rel='stylesheet'>
+
+
+
+
+    <title>Dice World</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        body{
+            height:100vh;
+            width:100%;
+            background-color:#FF8FB1;
+            position:absolute;
+        }
+        h1{
+            font-size:5em;
+            font-family:'Carter One';
+            position:relative;
+            left:25%;
+            padding-top:1.25%;
+            color:blueviolet;
+            text-shadow: 0px 15px 5px black;
+        }
+        h2{
+            font-size:2em;
+            font-family:'Neucha';
+            position:relative;
+            top:-17%;
+            left:37%;
+            width:20%;
+            color:black;
+            text-shadow: 0px 10px 3px blueviolet;
+            margin-top:25px;
+        }
+        img{
+            border-radius:50px;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius:50px;
+            height:300px;
+            width:300px;
+            padding-left:50px;
+        }
+        button{
+             background: #34bdd9;
+             background-image: -webkit-linear-gradient(top, #34bdd9, #2980b9);
+             background-image: -moz-linear-gradient(top, #34bdd9, #2980b9);
+             background-image: -ms-linear-gradient(top, #34bdd9, #2980b9);
+             background-image: -o-linear-gradient(top, #34bdd9, #2980b9);
+             background-image: linear-gradient(to bottom, #34bdd9, #2980b9);
+             -webkit-border-radius: 28;
+             -moz-border-radius: 28;
+             border-radius: 28px;
+             font-family: Georgia;
+             color: #ffffff;
+             font-size: 20px;
+             padding: 10px 20px 10px 20px;
+             text-decoration: none;
+             outline:none;
+             border:none;
+             position:relative;
+             top:-25%;
+             left:65%;
+        }
+        button:hover{
+             background: #fcec3c;
+             background-image: -webkit-linear-gradient(top, #fcec3c, #d9aa34);
+             background-image: -moz-linear-gradient(top, #fcec3c, #d9aa34);
+             background-image: -ms-linear-gradient(top, #fcec3c, #d9aa34);
+             background-image: -o-linear-gradient(top, #fcec3c, #d9aa34);
+             background-image: linear-gradient(to bottom, #fcec3c, #d9aa34);
+             text-decoration: none;
+        }
+        .imagas{
+            position:relative;
+            left:20%;
+            display:inline;
+        }
+        ul{
+            list-style-type:none;
+            position:relative;
+            left:20%;
+        }
+        li{
+            display:inline;
+            padding-left:120px;
+            padding-top:5px;
+            padding-bottom:5px;
+            font-size:300%;
+            font-weight:400;
+        }
+        p{
+            color:black;
+        }
+        .livcount{
+            display:inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dice World</h1>
+    <ul>
+        <li>Computer</li>
+        <li>You</li>
+    </ul>
+    <div class="imagas">
+    <img class="first" src="dice6.jpeg" alt="1">
+    <img class="second" src="dice6.jpeg" alt="1">
+    <div class="livcount">
+        <p>No.of times dice rolled : 0 time(s)</p>
+        <p>you won : 0 time(s)</p>
+        <p>computer won : 0 time(s)</p>
+        <p>tie : 0 time(s)</p>
+    </div>
+    </div>
+    <h2>press the button to roll the dice</h2>
+    <button onclick="myfunc()">click me</button>
+    <script src="index.js"></script>
+</body>
+</html>
